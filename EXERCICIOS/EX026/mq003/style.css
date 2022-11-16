@@ -23,7 +23,7 @@ h1{
         background-position: center bottom;
  }
 }
-@media screen and (orientation: landcape) {
+@media screen and (orientation: landscape) {
     body{
           background-image: url(imagens/cev-landscape.jpg);
           background-position: left bottom;
