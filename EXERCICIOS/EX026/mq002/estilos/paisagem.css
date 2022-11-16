@@ -2,7 +2,6 @@
 
 /*AP DEITADO*/
 body{
-  background: url(../imagens/cev-landscape.jpg);
-  background-repeat: no-repeat;
+  background-image: url(../imagens/cev-landscape.jpg);
   background-position: left bottom;
 }
