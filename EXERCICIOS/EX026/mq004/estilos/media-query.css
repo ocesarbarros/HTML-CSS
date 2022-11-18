@@ -1,1 +1,63 @@
 @charset "UTF-8";
+
+ /* Pequenas telas e Celular: 320px — 600px
+    Tablets:  600px — 768px
+    Notebook: 768px — 992px
+    PC: 992px — 1200px
+    Tvs: 1201px ou +
+    */
+
+@media print {
+body{
+  background-image: url(../imagens/back-print.jpg);
+  font-family: 'Courier New', Courier, monospace;
+}
+main{
+  border: 2px solid black;
+}
+main h1{
+  text-shadow: none;
+  color: black;
+}
+main::after{
+  content: 'Essa impressão foi feita através do Site: https://github.com/ocesarbarros';
+  text-decoration: overline;
+}
+img#fone {display: none;}
+img#tablet {display: none;}
+img#print {display: block;}
+img#pc {display: none;}
+img#tv {display: none;}
+
+}
+ 
+@media screen and (min-width:768px) and (max-width: 992px) {
+  body{
+    background-image: url(../imagens/back-tablet.jpg);
+  }
+  img#fone {display: none;}
+  img#tablet {display: block;}
+  img#print {display: none;}
+  img#pc {display: none;}
+  img#tv {display: none;}
+}
+@media screen and (min-width:992px) and (max-width: 1200px) {
+  body{
+    background-image: url(../imagens/back-pc.jpg);
+  }
+  img#fone {display: none;}
+  img#tablet {display: none;}
+  img#print {display: none;}
+  img#pc {display: block;}
+  img#tv {display: none;}
+  }
+@media screen and (min-width: 1201px) {
+  body{
+    background-image: url(../imagens/back-tv.jpg);
+  }
+  img#fone {display: none;}
+  img#tablet {display: none;}
+  img#print {display: none;}
+  img#pc {display: none;}
+  img#tv {display: block;}
+} 
